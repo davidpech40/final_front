@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+*{
+  box-sizing: 0;
+  padding: 0;
+}
+:root{
+  --grisbajo: #f4f4f4;
+  --azul: #3359b8;
+  --blanco: #ffffff;
+  --negro: #00000a;
+  --tipografiagruesa:'Montserrat', sans-serif;
+  --tipografiadelgada: 'Roboto', sans-serif;
+}
+body{
+  font-family: helvetica;
+  text-align: justify;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+.contenedoracordeon{
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+.acordeon{
+  /* border: 1px blue solid; */
+  width: 46%;  
+  /* padding: 0px 20px; */
+}
+h1{
+  text-align: left;
+  font-size: 40px;
+  font-weight: 200;
+  font-family: arial;
+}
+.titulo_acordeon{
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px #ccc;
+}
+.iconos{
+  /* border: 1px blue solid; */
+  position: relative;
+  padding: 0px;
+  width: 25px;
+  height: 25px;
+}
+.iconos i{
+  color: var(--blanco);
+  background-color: var(--azul);
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mas1, .mas2, .mas3, .mas4{
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  transition: all .3s;
+}
+.menos1, .menos2, .menos3, .menos4{
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+}
+.desaparecer{
+  opacity: 0;
+}
+h2{
+  margin-left: 20px;
+  font-size: 21px;
+  color: var(--negro);
+  font-weight: 100;
+  font-style: normal;
+  font-family: arial;
+}
+.acordeon_contenido{
+  display: none;
+  /* border: 1px red solid; */
+  padding: 0px 75px;
+  font-size: 17px;
+  line-height: 25px;
+  color: #8E8E8E;
+  margin: 0;
+}
+.contenedoracordeon h1 {
+  width: 40%;
+  
+}
+.contenedoracordeon h5 {
+  font-size: 25px;
+  color: var(--azul);
+  
+}
